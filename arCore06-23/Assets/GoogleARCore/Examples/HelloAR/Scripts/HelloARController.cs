@@ -50,7 +50,7 @@ namespace GoogleARCore.Examples.HelloAR
         /// <summary>
         /// A model to place when a raycast from a user touch hits a plane.
         /// </summary>
-        public GameObject AndyPlanePrefab;
+        public GameObject[] AndyPlanePrefabs;
 
         /// <summary>
         /// A model to place when a raycast from a user touch hits a feature point.
@@ -72,7 +72,18 @@ namespace GoogleARCore.Examples.HelloAR
         /// The Unity Update() method.
         /// </summary>
         public int ObjectCount = 0;
-        public int ObjectAllowCount = 1;
+        public int ObjectAllowCount;
+        public int ArrayEliment;
+
+        public void setArrayEliment(int input)
+        {
+            ArrayEliment = input;
+            if (ArrayEliment == 0)
+                ObjectAllowCount = 1;
+            else if (ArrayEliment == 1)
+                ObjectAllowCount = 2;
+
+        }
         public void Update()
         {
             _UpdateApplicationLifecycle();
@@ -114,11 +125,11 @@ namespace GoogleARCore.Examples.HelloAR
                         GameObject prefab;
                         if (hit.Trackable is FeaturePoint)
                         {
-                            prefab = AndyPlanePrefab;
+                            prefab = AndyPlanePrefabs[ArrayEliment];
                         }
                         else
                         {
-                            prefab = AndyPlanePrefab;
+                            prefab = AndyPlanePrefabs[ArrayEliment];
                         }
 
                         // Instantiate Andy model at the hit pose.

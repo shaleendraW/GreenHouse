@@ -398,7 +398,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 84695314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 627916103}
+        m_MethodName: setArrayEliment
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &84695314
@@ -700,7 +711,7 @@ GameObject:
   - component: {fileID: 339876636}
   - component: {fileID: 339876635}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Fan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -765,7 +776,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 339876636}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 627916103}
+        m_MethodName: setArrayEliment
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &339876636
@@ -930,12 +952,14 @@ MonoBehaviour:
   FirstPersonCamera: {fileID: 896679035}
   DetectedPlanePrefab: {fileID: 1654175882956584, guid: 6a35c744e5010405c847fad90282d2be,
     type: 3}
-  AndyPlanePrefab: {fileID: 8509028848162768327, guid: f59e28b18f5ff744ab1d20fb7e166930,
-    type: 3}
+  AndyPlanePrefabs:
+  - {fileID: 6573091773075603435, guid: 2a468d2687ae28c4f886c86011baf1f7, type: 3}
+  - {fileID: 4415296177794501441, guid: d52e514a30b74a54bbb3df235fdca210, type: 3}
   AndyPointPrefab: {fileID: 1190091649889860, guid: b27e8d7fe70df464188ea5dcf2af0bb3,
     type: 3}
   ObjectCount: 0
   ObjectAllowCount: 1
+  ArrayEliment: 0
 --- !u!1001 &688001843
 PrefabInstance:
   m_ObjectHideFlags: 0
