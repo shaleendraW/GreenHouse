@@ -1036,7 +1036,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Soil Mositure Simulation
+  m_Text: Soil Moisture Simulation
 --- !u!222 &672312437
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2282,7 +2282,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Light Intencity Simulation
+  m_Text: Light Intensity Simulation
 --- !u!222 &1893285307
 CanvasRenderer:
   m_ObjectHideFlags: 0
