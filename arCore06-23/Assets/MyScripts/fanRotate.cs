@@ -11,9 +11,15 @@ public class fanRotate : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void FanOn()
     {
         transform.Rotate(0, spinspeed * Time.deltaTime, 0);
     }
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+
 }
